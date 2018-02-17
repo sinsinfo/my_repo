@@ -5,6 +5,11 @@ function cube() {
    var num = document.getElementById("n1");
    num.value = Math.pow(num.value, 3);
 }
+
+function a_la_cuarta() {
+   var num = document.getElementById("n1");
+   num.value = num.value * num.value * num.value * num.value;
+};
 function seno() {
    var num = document.getElementById("n1");
    num.value = Math.sin(num.value);
@@ -16,6 +21,7 @@ function seno() {
 N&uacute;mero:
 <input type="text" id="n1"><p>
 <button onclick="cube()">x<sup>3</sup></button>
+<button onclick="a_la_cuarta()">x<sup>4</sup></button>
 <button onclick="seno()">sin(x)</button>
 </body>
 </html>
